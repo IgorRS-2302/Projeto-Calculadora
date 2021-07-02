@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <h1>Calculadora</h1>
+    <div id="calculator">
+        <div id="grid-container">
+            <form name="form" class="results">                
+                <input type="textview" name="textview" id="textview">
+            </form>
+            <button class="grid-item" id="grid-7" value="7" onclick="insert(7)">7</button>
+            <button class="grid-item" id="grid-8" value="8" onclick="insert(8)">8</button>
+            <button class="grid-item" id="grid-9" value="9" onclick="insert(9)">9</button>
+            <button class="grid-item" id="grid-plus" value="+" onclick="insert('+')">+</button>
+    
+            <button class="grid-item" id="grid-4" value="4" onclick="insert(4)">4</button>
+            <button class="grid-item" id="grid-5" value="5" onclick="insert(5)">5</button>
+            <button class="grid-item" id="grid-6" value="6" onclick="insert(6)">6</button>
+            <button class="grid-item" id="grid-minus" value="-" onclick="insert('-')"> -</button>
+    
+            <button class="grid-item" id="grid-1" value="1" onclick="insert(1)">1</button>
+            <button class="grid-item" id="grid-2" value="2" onclick="insert(2)">2</button>
+            <button class="grid-item" id="grid-3" value="3" onclick="insert(3)">3</button>
+            <button class="grid-item" id="grid-x" value="*" onclick="insert('*')">x</button>
+            
+            <button class="grid-item" id="grid-c" onclick="clean()">C</button>
+            <button class="grid-item-0" value="0" onclick="insert('0')">0</button>
+            <button class="grid-item" id="grid-divider" value="/" onclick="insert('/')">÷</button>
+            <button class="grid-item" id="grid-equals" onclick="equal()"> =</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+    </main>
+</body>
+</html>
